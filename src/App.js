@@ -1,12 +1,16 @@
-import InputTodo from './InputTodo';
-import Todos from './Todo';
+import InputTodo from './components/InputTodo';
+import Todos from './components/Todo';
 
-function App() {
+
+
+function App(props) {
   return (
     <div>
       <h1>My Todos</h1>
       <InputTodo/>
-      <Todos/>
+      <div id="todos">
+      <Todos title='hello'/>
+      </div>
     </div>
   );
 }

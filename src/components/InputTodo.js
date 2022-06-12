@@ -23,18 +23,17 @@ const InputTodo = () => {
     setEnteredTodoIsValid(true);
 
     const enteredValue = todoInputRef.current.value;
-    console.log(enteredValue);
   }
   const todoInputIsInvalid = !enteredTodoIsValid && enteredTodoToched;
   const todoInputClasses = todoInputIsInvalid?'form-control invalid' : 'form-control';
 
   return (
-    <div className={todoInputClasses}>
+    <div className={todoInputClasses} inputItem={enteredTodo}>
       <form onSubmit={formSubmissionHandler}>
         <input ref={todoInputRef} type="text" id="todo" placeholder='What to do?' onChange={todoInputChangeHandler}/>
         <input type="submit" value="Submit" className='btn'/>
       </form>
-      {todoInputIsInvalid && <p className='error-text'>Todo must not be empty.</p>}
+      {todoInputIsInvalid && <p className='error-text'>It must not be empty.</p>}
     </div>
   );
 }
