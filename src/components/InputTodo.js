@@ -30,10 +30,10 @@ const InputTodo = () => {
   return (
     <div className={todoInputClasses} inputItem={enteredTodo}>
       <form onSubmit={formSubmissionHandler}>
-        <input ref={todoInputRef} type="text" id="todo" placeholder='What to do?' onChange={todoInputChangeHandler}/>
+        <input ref={todoInputRef} type="text" id="todo" placeholder='일정을 입력하세요.' onChange={todoInputChangeHandler}/>
         <input type="submit" value="Submit" className='btn'/>
       </form>
-      {todoInputIsInvalid && <p className='error-text'>It must not be empty.</p>}
+      {todoInputIsInvalid && <p className='error-text'>최소 한 글자 이상 입력하세요.</p>}
     </div>
   );
 }
