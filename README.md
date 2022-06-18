@@ -20,5 +20,8 @@ React Js를 이용한 일정 목록 (제작중)
 <br><br>
 
 ## 미리보기
-![image](https://user-images.githubusercontent.com/93658676/173065163-b2ce55b4-3bdc-4c3f-a6df-087c0e18d3a9.png)
+### 기본 목록
+![image](https://user-images.githubusercontent.com/93658676/174421363-b8bde821-29f0-486a-8991-6b3e5a5f326f.png) <br>
+### 입력 오류 메세지
+![image](https://user-images.githubusercontent.com/93658676/174421381-4807646f-3126-4cda-b568-5b231fa1bce3.png)
 
